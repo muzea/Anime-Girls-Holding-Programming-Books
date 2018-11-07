@@ -12,7 +12,6 @@ let content = `<!DOCTYPE html>
   <style>
     html, body { margin: 0; padding: 0 }
     body {
-      width: 80vw;
       padding: 5vh 10vw;
       background-color: #F0F2F5;
     }
