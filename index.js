@@ -52,7 +52,7 @@ let content = `<!DOCTYPE html>
 
 function buildSection(catName, list) {
   const lis = list.filter(it => it.isFile()).map(it => {
-    const srcPath = path.join(catName, it.name);
+    const srcPath = path.join(encodeURIComponent(catName), encodeURIComponent(it.name));
     return `<li><a href="${srcPath}" target="_blank"><img src="${srcPath}" /></a></li>`
   }).join('\n  ');
   return `
