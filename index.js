@@ -26,18 +26,21 @@ let content = `<!DOCTYPE html>
       border-left: 3px solid #0E90D2;
     }
     ul {
+      justify-content: space-around;
       list-style: none;
-      padding: 16px;
+      padding: 16px 16px 8px;
       background-color: #FFF;
       display: flex;
       flex-wrap: wrap
     }
     li {
-      max-width: 320px;
-      margin-right: 16px;
+      margin-right: 8px;
+      margin-bottom: 8px;
     }
     img {
-      max-width: 320px;
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
     }
   </style>
 </head>
